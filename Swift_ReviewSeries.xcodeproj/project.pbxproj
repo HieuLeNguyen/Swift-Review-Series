@@ -18,6 +18,8 @@
 		0076EEF72CE7A8C600A31C10 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076EEF62CE7A8C600A31C10 /* InitViewController.swift */; };
 		0076EEFE2CE7B2C800A31C10 /* EX2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0076EEFD2CE7B2C800A31C10 /* EX2ViewController.xib */; };
 		0076EEFF2CE7B2C800A31C10 /* EX2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076EEFC2CE7B2C800A31C10 /* EX2ViewController.swift */; };
+		0076EF032CE7BA4E00A31C10 /* EX3TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0076EF022CE7BA4E00A31C10 /* EX3TableViewCell.xib */; };
+		0076EF042CE7BA4E00A31C10 /* EX3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076EF012CE7BA4E00A31C10 /* EX3TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		0076EEF62CE7A8C600A31C10 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
 		0076EEFC2CE7B2C800A31C10 /* EX2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX2ViewController.swift; sourceTree = "<group>"; };
 		0076EEFD2CE7B2C800A31C10 /* EX2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EX2ViewController.xib; sourceTree = "<group>"; };
+		0076EF012CE7BA4E00A31C10 /* EX3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX3TableViewCell.swift; sourceTree = "<group>"; };
+		0076EF022CE7BA4E00A31C10 /* EX3TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EX3TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 			children = (
 				0076EEF02CE7A08D00A31C10 /* TableViewController.swift */,
 				0076EEF12CE7A08D00A31C10 /* TableViewController.xib */,
+				0076EF052CE7BA5B00A31C10 /* Ex3Cell */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -120,6 +125,15 @@
 				0076EEFD2CE7B2C800A31C10 /* EX2ViewController.xib */,
 			);
 			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		0076EF052CE7BA5B00A31C10 /* Ex3Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0076EF012CE7BA4E00A31C10 /* EX3TableViewCell.swift */,
+				0076EF022CE7BA4E00A31C10 /* EX3TableViewCell.xib */,
+			);
+			path = Ex3Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +196,7 @@
 			files = (
 				0076EEE62CE7951000A31C10 /* Assets.xcassets in Resources */,
 				0076EEE92CE7951000A31C10 /* Base in Resources */,
+				0076EF032CE7BA4E00A31C10 /* EX3TableViewCell.xib in Resources */,
 				0076EEE42CE7950E00A31C10 /* Base in Resources */,
 				0076EEF22CE7A08D00A31C10 /* TableViewController.xib in Resources */,
 				0076EEFE2CE7B2C800A31C10 /* EX2ViewController.xib in Resources */,
@@ -199,6 +214,7 @@
 				0076EEE12CE7950E00A31C10 /* ViewController.swift in Sources */,
 				0076EEDD2CE7950E00A31C10 /* AppDelegate.swift in Sources */,
 				0076EEF72CE7A8C600A31C10 /* InitViewController.swift in Sources */,
+				0076EF042CE7BA4E00A31C10 /* EX3TableViewCell.swift in Sources */,
 				0076EEDF2CE7950E00A31C10 /* SceneDelegate.swift in Sources */,
 				0076EEF32CE7A08D00A31C10 /* TableViewController.swift in Sources */,
 			);

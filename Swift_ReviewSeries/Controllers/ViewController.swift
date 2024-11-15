@@ -68,7 +68,7 @@ extension ViewController: UITableViewDelegate {
             vc.title = "Navigation with view"
             navigationController?.pushViewController(vc, animated: true)
         case 2:
-            let vc = InitViewController()
+            let vc = TableViewController()
             navigationController?.pushViewController(vc, animated: true)
         case 3:
             let vc = InitViewController()

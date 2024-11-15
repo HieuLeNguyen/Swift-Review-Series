@@ -8,38 +8,49 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-        
+    
+    // MARK: - Variables
+    private var items = [
+        "Tạo Bảng cơ bản",
+        "Tạo Bảng tuỳ chỉnh cell"
+    ]
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.register(EX3TableViewCell.nib(), forCellReuseIdentifier: EX3TableViewCell.identifier)
+        
+        // add right item button and title
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addItem))
+        self.navigationItem.title = "Swift Review Series"
+    }
+    
+    // TODO: Add Item
+    @objc func addItem() {
+        print("add items")
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return items.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: EX3TableViewCell.identifier, for: indexPath) as! EX3TableViewCell
         // Configure the cell...
+        cell.accessoryType = .disclosureIndicator
+        cell.textLabel?.text = items[indexPath.row]
+        cell.imageView?.image = UIImage(systemName: "table")
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -76,6 +87,10 @@ class TableViewController: UITableViewController {
     }
     */
 
+    // TODO: Tasks
+    /// + Tạo bảng cơ bản với một viewcontroller
+    /// + Tạo bảng tuỳ chỉnh với một viewcontroller
+    
     /*
     // MARK: - Navigation
 
