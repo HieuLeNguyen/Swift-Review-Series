@@ -18,14 +18,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
         // MARK: - Đăng ký scene khởi tạo
-        guard let w = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: w)
-        let vc = InitViewController()
-        /// Tạo thêm lớp bọc  root nav -> Cho phép điều hướng
-        let nav = UINavigationController(rootViewController: vc)
-        window?.rootViewController = nav
-        /// Hiển thị scene
-        window?.makeKeyAndVisible()
+        /**
+          - comment
+         guard let w = (scene as? UIWindowScene) else { return }
+         window = UIWindow(windowScene: w)
+         let vc = InitViewController()
+         /// Tạo thêm lớp bọc  root nav -> Cho phép điều hướng
+         let nav = UINavigationController(rootViewController: vc)
+         window?.rootViewController = nav
+         /// Hiển thị scene
+         window?.makeKeyAndVisible()
+         */
         
         /**
          - Warings:
