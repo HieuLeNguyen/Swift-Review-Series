@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // MARK: - Đăng ký scene khởi tạo
         guard let w = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: w)
-        let vc = ViewController()
+        let vc = InitViewController()
         /// Tạo thêm lớp bọc  root nav -> Cho phép điều hướng
         let nav = UINavigationController(rootViewController: vc)
         window?.rootViewController = nav
