@@ -12,7 +12,8 @@ class TableViewController: UITableViewController {
     // MARK: - Variables
     private var items = [
         "Tạo Bảng cơ bản",
-        "Tạo Bảng tuỳ chỉnh cell"
+        "Tạo Bảng tuỳ chỉnh cell",
+        "Tạo Bảng auto size height"
     ]
     
     // MARK: - Lifecycle
@@ -50,6 +51,22 @@ class TableViewController: UITableViewController {
         cell.imageView?.image = UIImage(systemName: "table")
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            let vc = BaseViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = CustomViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = AutomaticRowHeightViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        default:
+            return
+        }
     }
 
     /*
